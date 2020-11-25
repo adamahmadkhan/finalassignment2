@@ -3,7 +3,7 @@ public class Move {
     private final int row; // making private as require in question
     private final int col;
     private final DirectionList directionList;
-    int r,c,d
+    
     public Move(int row,int col,DirectionList directionList){
         this.row= row;
         this.col= col;
