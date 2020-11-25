@@ -1,7 +1,7 @@
 package assignmen2;
 public class DirectionList 
 	{
-	  public int in=-1;
+	  public int in=-1; // this represents index
 	  private Direction[] direction;
 public DirectionList()
 	{

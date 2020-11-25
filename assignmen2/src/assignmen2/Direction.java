@@ -3,14 +3,14 @@ public class Direction {
 	 private int row;
 	 private int col; 
 public Direction (int r, int c) {
-	 row = r; // i can use setter also know as  accessors but i use scanner for effective inputs
+	 row = r; //  use scanner for effective inputs
 	 col = c;
 	 toString(); // calling the function
 }
 public String toString(){
 	
 	        
-	         if(row==-1&&col==0)
+			if(row==-1&&col==0)
 	            return "<up>";
 	        else if(row==1&&col==0)
 	            return "<down>";
