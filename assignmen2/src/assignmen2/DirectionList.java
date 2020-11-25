@@ -1,45 +1,45 @@
 package assignmen2;
 public class DirectionList 
 	{
+	  public int in=-1;
 	  private Direction[] direction;
-	  int index=-1;
-	  public DirectionList(){
-	  direction = new Direction[8];
+public DirectionList()
+	{
+	   direction = new Direction[8];
 	}
-	  
 public void addDirection(Direction d)
 	{
-	  index++;
-	  if(index<=7)
-	     {
-	       direction[index]=d;
-	     }
-	 }
+	in++;
+	if(in<=7)
+	  {
+	   direction[in]=d;
+	  }
+	}
 public int length()
 	 {
-	    return index;
+	   return in;
 	 }
 public Direction getDirection(int i)
 	{
 	   return direction[i];
 	}
 public String toString(){
-	     String result ="";
-	     if(index>=0&&index<=7){
-	     result="{";
-	     for(int i=0;i<index;i++)
+	     	String result ="";
+	     if(in>=0&&in<=7)
 	     {
-	       result+=direction[i].toString()+",";
+	    	 result="{";
+	    	 for(int i=0;i<in;i++)
+	    	 {
+	    		 result+=direction[i].toString()+",";
+	    	 }
 	     }
-	     }
-	     if(index>-1)
-	     result+=direction[index].toString()+"}";
+	     if(in>-1)
+	    	 result+=direction[in].toString()+"}";
 	     return result;
 	   }
-	   
-	   public static DirectionList allDirections(){
-	       return new DirectionList();
-	   }
-	  
-	}
+public static DirectionList allDirections()
+		{
+	    return new DirectionList();
+		}
+}
 
