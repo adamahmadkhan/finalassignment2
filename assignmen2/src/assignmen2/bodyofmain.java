@@ -10,7 +10,7 @@ public class bodyofmain { // i change class name from Othello to body of main to
 		int r,c;
 		System.out.print("hello this is start of game \n Black player is x and whitel player o\n");
 		Scanner cin = new Scanner(System.in); // adding scanner function
-		bodyofmain con = new bodyofmain();
+		bodyofmain con = new bodyofmain(); // constructor for main body to acess arrays
 		System.out.print("Enter size of board");
 		con.size=cin.nextInt();
 		r=cin.nextInt();
